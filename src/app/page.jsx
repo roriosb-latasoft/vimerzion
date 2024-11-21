@@ -4,22 +4,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('/images/fondo_a.png')` }}
-      ></div>
-       {/* Capa de filtro opcional */}
-       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div className="flex flex-col min-h-screen">
 
-      {/* Navbar */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-800 via-purple-800 to-pink-800 -z-10" />
       {/* Navbar */}
       <div className="relative z-20">
         <Navbar />
       </div>
 
       {/* Contenido principal */}
-      <main className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white text-center">
+      <main className="flex-grow flex flex-col items-center justify-center text-white text-center">
         {/* Logo */}
         <img
           className="w-32 h-auto mb-5"
@@ -49,6 +43,6 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
-    </>
+    </div>
   );
 }

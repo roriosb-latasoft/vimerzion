@@ -4,8 +4,7 @@ import Footer from "@/app/components/Footer";
 export default function Eventos() {
   return (
     <>
-      {/* Imagen de fondo */}
-      <div className="absolute inset-0 bg-[url('/images/fondo_a.png')] bg-cover bg-center -z-10" />
+     <div className="absolute inset-0 bg-gradient-to-b from-blue-800 via-purple-800 to-pink-800 -z-10" />
 
       {/* Navbar */}
       <div className="relative z-20">

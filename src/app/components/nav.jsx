@@ -30,7 +30,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#" className="hover:text-cyan-300 transition-all">
+          <a href="/catalogo" className="hover:text-cyan-300 transition-all">
             Catálogo
           </a>
         </li>
