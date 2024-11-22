@@ -5,96 +5,91 @@ import Footer from "@/app/components/Footer";
 import { useState } from "react";
 
 export default function Eventos() {
-  const [activeCatalog, setActiveCatalog] = useState("catalog1");
+  const [activeCatalog, setActiveCatalog] = useState("A-2024");
 
   const catalogs = {
-    catalog1: [
-      { id: 1, image: "/images/catalog1-item1.png", name: "Producto 1" },
-      { id: 2, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 3, image: "/images/catalog1-item2.png", name: "Producto 3" },
-      { id: 4, image: "/images/catalog1-item2.png", name: "Producto 4" },
-      { id: 5, image: "/images/catalog1-item2.png", name: "Producto 5" },
-      { id: 6, image: "/images/catalog1-item2.png", name: "Producto 6" },
-      { id: 7, image: "/images/catalog1-item2.png", name: "Producto 7" },
-      { id: 8, image: "/images/catalog1-item2.png", name: "Producto 8" },
-      { id: 9, image: "/images/catalog1-item2.png", name: "Producto 9" },
-      { id: 10, image: "/images/catalog1-item2.png", name: "Producto 10" },
-      { id: 11, image: "/images/catalog1-item2.png", name: "Producto 11" },
-      { id: 12, image: "/images/catalog1-item2.png", name: "Producto 12" },
-      { id: 13, image: "/images/catalog1-item2.png", name: "Producto 13" },
-      { id: 14, image: "/images/catalog1-item2.png", name: "Producto 14" },
-      { id: 15, image: "/images/catalog1-item2.png", name: "Producto 15" },
+    "A-2024": [
+      { id: 1, image: "/images/fotosCatalogo/A-2024/arizona.png" },
+      { id: 2, image: "/images/fotosCatalogo/A-2024/beatsaber.png" },
+      { id: 3, image: "/images/fotosCatalogo/A-2024/blaston.png" },
+      { id: 4, image: "/images/fotosCatalogo/A-2024/climb2.png" },
+      { id: 5, image: "/images/fotosCatalogo/A-2024/creed.png" },
+      { id: 6, image: "/images/fotosCatalogo/A-2024/eleven.png" },
+      { id: 7, image: "/images/fotosCatalogo/A-2024/epicroller.png" },
+      { id: 8, image: "/images/fotosCatalogo/A-2024/fruitninja.png" },
+      { id: 9, image: "/images/fotosCatalogo/A-2024/job.png" },
+      { id: 10, image: "/images/fotosCatalogo/A-2024/population.png" },
+      { id: 11, image: "/images/fotosCatalogo/A-2024/richie.png" },
+      { id: 12, image: "/images/fotosCatalogo/A-2024/sniperelite.png" },
+      { id: 13, image: "/images/fotosCatalogo/A-2024/superhot.png" },
+      { id: 14, image: "/images/fotosCatalogo/A-2024/vader.png" },
+      { id: 15, image: "/images/fotosCatalogo/A-2024/warplanes.png" },
     ],
-    catalog2: [
-      { id: 16, image: "/images/catalog2-item1.png", name: "Producto 16" },
-      { id: 17, image: "/images/catalog2-item2.png", name: "Producto " },
-      { id: 18, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 19, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 20, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 21, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 22, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 23, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 24, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 25, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 26, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 27, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 28, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 29, image: "/images/catalog1-item2.png", name: "Producto " },
-      { id: 30, image: "/images/catalog1-item2.png", name: "Producto " },
+    "B-2024": [
+      { id: 16, image: "/images/fotosCatalogo/B-2024/beatsaber.png" },
+      { id: 17, image: "/images/fotosCatalogo/B-2024/blaston.png" },
+      { id: 18, image: "/images/fotosCatalogo/B-2024/climb2.png" },
+      { id: 19, image: "/images/fotosCatalogo/B-2024/creed.png" },
+      { id: 20, image: "/images/fotosCatalogo/B-2024/richie.png" },
+      { id: 21, image: "/images/fotosCatalogo/B-2024/superhot.png" },
+      { id: 22, image: "/images/fotosCatalogo/B-2024/angrybirs.png" },
+      { id: 23, image: "/images/fotosCatalogo/B-2024/carve.png" },
+      { id: 24, image: "/images/fotosCatalogo/B-2024/gladius.png" },
+      { id: 25, image: "/images/fotosCatalogo/B-2024/gorilla.png" },
+      { id: 26, image: "/images/fotosCatalogo/B-2024/gym.png" },
+      { id: 27, image: "/images/fotosCatalogo/B-2024/pavlov.png" },
+      { id: 28, image: "/images/fotosCatalogo/B-2024/smashdrums.png" },
+      { id: 29, image: "/images/fotosCatalogo/B-2024/tennis.png" },
+      { id: 30, image: "/images/fotosCatalogo/B-2024/soccer.png" },
     ],
-    catalog3: [
-      { id: 31, image: "/images/catalog3-item1.png", name: "Producto 31" },
-      { id: 32, image: "/images/catalog3-item2.png", name: "Producto 32" },
-      { id: 33, image: "/images/catalog1-item2.png", name: "Producto 33" },
-      { id: 34, image: "/images/catalog1-item2.png", name: "Producto 34" },
-      { id: 35, image: "/images/catalog1-item2.png", name: "Producto 35" },
-      { id: 36, image: "/images/catalog1-item2.png", name: "Producto 36" },
-      { id: 37, image: "/images/catalog1-item2.png", name: "Producto 37" },
-      { id: 38, image: "/images/catalog1-item2.png", name: "Producto 38" },
-      { id: 39, image: "/images/catalog1-item2.png", name: "Producto 39" },
+    "2024-PS5": [
+      { id: 31, image: "/images/fotosCatalogo/2024-PS5/dbz.png" },
+      { id: 32, image: "/images/fotosCatalogo/2024-PS5/fc24.png" },
+      { id: 33, image: "/images/fotosCatalogo/2024-PS5/gta.png" },
+      { id: 34, image: "/images/fotosCatalogo/2024-PS5/gt7.png" },
+      { id: 35, image: "/images/fotosCatalogo/2024-PS5/nba.png" },
+      { id: 36, image: "/images/fotosCatalogo/2024-PS5/fornite.png" },
+      { id: 37, image: "/images/fotosCatalogo/2024-PS5/mk11.png" },
+      { id: 38, image: "/images/fotosCatalogo/2024-PS5/rocket.png" },
+      { id: 39, image: "/images/fotosCatalogo/2024-PS5/ufc.png" },
     ],
-    catalog4: [
-      { id: 40, image: "/images/catalog4-item1.png", name: "Producto 7" },
-      { id: 41, image: "/images/catalog4-item2.png", name: "Producto 8" },
-      { id: 42, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 43, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 44, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 45, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 46, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 47, image: "/images/catalog1-item2.png", name: "Producto 2" },
-
+    "2024-PSVR2": [
+      { id: 40, image: "/images/fotosCatalogo/2024-PSVR2/btb.png" },
+      { id: 41, image: "/images/fotosCatalogo/2024-PSVR2/crossfire.png" },
+      { id: 42, image: "/images/fotosCatalogo/2024-PSVR2/cyube.png" },
+      { id: 43, image: "/images/fotosCatalogo/2024-PSVR2/horizon.png" },
+      { id: 44, image: "/images/fotosCatalogo/2024-PSVR2/rd4.png" },
+      { id: 45, image: "/images/fotosCatalogo/2024-PSVR2/switchback.png" },
+      { id: 46, image: "/images/fotosCatalogo/2024-PSVR2/synapse.png" },
+      { id: 47, image: "/images/fotosCatalogo/2024-PSVR2/unplugged.png" },
     ],
-    catalog5: [
-      { id: 48, image: "/images/catalog5-item1.png", name: "Producto 9" },
-      { id: 49, image: "/images/catalog5-item2.png", name: "Producto 10" },
-      { id: 51, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 52, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 53, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 54, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 55, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 56, image: "/images/catalog1-item2.png", name: "Producto 2" },
-      { id: 57, image: "/images/catalog1-item2.png", name: "Producto 2" },
+    "2024-Switch": [
+      { id: 48, image: "/images/fotosCatalogo/2024-Switch/cn.png" },
+      { id: 49, image: "/images/fotosCatalogo/2024-Switch/fc24.png" },
+      { id: 51, image: "/images/fotosCatalogo/2024-Switch/fornite.png" },
+      { id: 52, image: "/images/fotosCatalogo/2024-Switch/gta3.png" },
+      { id: 53, image: "/images/fotosCatalogo/2024-Switch/kart.png" },
+      { id: 54, image: "/images/fotosCatalogo/2024-Switch/minecraft.png" },
+      { id: 55, image: "/images/fotosCatalogo/2024-Switch/mk11.png" },
+      { id: 56, image: "/images/fotosCatalogo/2024-Switch/nba.png" },
+      { id: 57, image: "/images/fotosCatalogo/2024-Switch/rocket.png" },
+      { id: 58, image: "/images/fotosCatalogo/2024-Switch/sm.png" },
+      { id: 59, image: "/images/fotosCatalogo/2024-Switch/smash.png" },
+      { id: 60, image: "/images/fotosCatalogo/2024-Switch/stumble.png" },
     ],
   };
 
+
   return (
     <>
-      {/* Fondo con gradiente */}
       <div className="absolute inset-0 bg-gradient-to-b from-blue-800 via-purple-800 to-pink-800 -z-10" />
-
-      {/* Navbar */}
       <div className="relative z-20">
         <Navbar />
       </div>
 
-      {/* Contenido principal */}
       <main className="relative z-10 max-w-7xl mx-auto py-12 px-4">
-        {/* Títulos */}
-        <h1 className="text-center text-4xl font-bold text-white mb-8">
-          Catálogo de Productos
-        </h1>
+        <h1 className="text-center text-4xl font-bold text-white mb-8">Catálogo de Productos</h1>
 
-        {/* Botones */}
         <div className="flex justify-center space-x-4 mb-10">
           {Object.keys(catalogs).map((catalogKey) => (
             <button
@@ -106,32 +101,24 @@ export default function Eventos() {
                   : "bg-gray-800 text-white hover:bg-gray-600"
               }`}
             >
-              {catalogKey.replace("catalog", "Catálogo ")}
+              {catalogKey}
             </button>
           ))}
         </div>
 
-        {/* Catálogo activo */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {catalogs[activeCatalog].map((item) => (
-            <div
-              key={item.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
-            >
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-full h-48 object-cover"
-              />
+          {(catalogs[activeCatalog] || []).map((item) => (
+            <div key={item.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src={item.image} alt={item.image.split("/").pop().split(".")[0]} className="w-full h-48 object-cover" />
               <div className="p-4">
-                <h2 className="text-lg font-bold">{item.name}</h2>
+                <h2 className="text-lg font-bold">
+                  {item.image.split("/").pop().split(".")[0]}
+                </h2>
               </div>
             </div>
           ))}
         </div>
       </main>
-
-      {/* Footer */}
       <Footer />
     </>
   );

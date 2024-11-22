@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link'; // Importa Link de next/link
 import logo from '/public/images/logo.png';
 
 export default function Navbar() {
@@ -15,29 +16,29 @@ export default function Navbar() {
       {/* Links */}
       <ul className="flex space-x-6">
         <li>
-          <a href="#" className="hover:text-cyan-300 transition-all">
+          <Link href="/" className="hover:text-cyan-300 transition-all">
             Inicio
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-cyan-300 transition-all">
+          <Link href="/nosotros" className="hover:text-cyan-300 transition-all">
             Nosotros
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/servicios" className="hover:text-cyan-300 transition-all">
+          <Link href="/servicios" className="hover:text-cyan-300 transition-all">
             Servicios
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/catalogo" className="hover:text-cyan-300 transition-all">
+          <Link href="/catalogo" className="hover:text-cyan-300 transition-all">
             Catálogo
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/contacto" className="hover:text-cyan-300 transition-all">
+          <Link href="/contacto" className="hover:text-cyan-300 transition-all">
             Contacto
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
